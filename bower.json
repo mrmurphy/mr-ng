@@ -1,0 +1,24 @@
+{
+  "name": "mr-ng",
+  "version": "0.0.1",
+  "homepage": "https://github.com/murphyrandle/mr-ng",
+  "authors": [
+    "Murphy Randle <murphyspublic@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "main": ["public/mr-box", "public/mr-wait"],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "!**/*mr-*/*"
+  ],
+  "dev-dependencies": {
+    "angular": "~1.3.2",
+    "flat-ui": "~2.2.1",
+    "angular-mocks": "~1.3.2"
+  }
+}

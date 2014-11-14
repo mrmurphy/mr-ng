@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>MR Box Talk!</title>
+		<link rel="stylesheet" href="/bower_components/flat-ui/dist/css/flat-ui.css">
+		<link rel="stylesheet" href="/app.css">
+	</head>
+	<body ng-app="MRBoxTalk">
+		<h3 class="app-title">MR-ng playground</h3>
+		<div ng-controller="Controller">
+		<mr-wait on='pending' exp='waitsAndResolves()'>
+			<h4>
+				I'm pending
+			</h4>
+		</mr-wait>
+		<mr-wait on='resolved' exp='waitsAndResolves()'>
+			<h4>
+				I'm resolved
+			</h4>
+		</mr-wait>
+		<mr-wait on='pending' exp='waitsAndRejects()'>
+			<h4>
+				I'm pending
+			</h4>
+		</mr-wait>
+		<mr-wait on='rejected' exp='waitsAndRejects()'>
+			<h4>
+				I'm rejected
+			</h4>
+		</mr-wait>
+
+		</div>
+
+		<script src="/bower_components/angular/angular.js"></script>
+		<script src="/app.js"></script>
+		<script src="/mr-wait/mr-wait.js"></script>
+	</body>
+</html>
